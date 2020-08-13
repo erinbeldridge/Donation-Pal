@@ -1,0 +1,11 @@
+<h1>{{ title }} </h1>
+<p><a href ="/campaigns/add">Add a Campaign</a></p>
+<p>Here is a listing of all the campaigns you can donate to.</p>
+
+<ul> 
+
+{{#each campaignlist }}
+<li> {{ key }}: <a href="Campaigns/view?key={{ key }}">{{title}}</a></li>
+{{/each}}
+
+</ul>
